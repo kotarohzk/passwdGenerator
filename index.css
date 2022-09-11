@@ -1,0 +1,114 @@
+body {
+	margin: 0;
+	font-family: 'Inter', sans-serif;
+	background-color: #1F2937;
+	color: white;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	margin: 100px auto;
+	width: 550px;
+}
+
+#headline {
+	font-family: 'Karla', sans-serif;
+	font-weight: 800;
+	font-size: 60px;
+	margin-bottom: 0;
+}
+
+.tagline {
+	font-weight: 400;
+	font-size: 20px;
+	color: #D5D4D8	;
+}
+
+.green-span {
+	color: #4ADF86;
+}
+
+.generate-button {
+	width: 250px;
+	padding: 15px 10px;
+	font-family: inherit;
+	font-size: 20px;
+	border: none;
+	border-radius: 10px;
+	background: #10B981;
+	color: white;
+	margin-top: 30px;
+	/* opacity: ; */
+}
+
+.generate-button:hover {
+	/* background: white; */
+	/* color: #10B981; */
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+.pass-container {
+	display: flex;
+	justify-content: space-between;
+	visibility: hidden;
+}
+
+.password-para {
+	text-align: center;
+	background: #273549;
+	padding: 15px 10px;
+	font-size: 20px;
+	border-radius: 10px;
+	color: #55F991;
+	margin: 0;
+	width: 240px;
+	height: 20px;
+}
+
+.password-para:hover {
+	cursor: pointer;
+	opacity: 0.5;
+	/* background: #9CA3AF; */
+}
+
+.horizontal-line {
+	background-color: #D5D4D8;
+	height: 2px;
+	width: 100%;
+	margin: 60px 0;
+}
+
+#length-input {
+	padding: 3px 30px;
+	width: 100px;
+	text-align: center;
+	border: 5px solid #10B981;
+	background-color: #10B981;
+	border-radius: 5px;
+	color: white;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.pass-config {
+	display: flex;
+	justify-content: space-between;
+}
+
+.pass-composition {
+	width: 250px;
+}
+
+#warning-message {
+	background-color: rgb(225, 137, 137);
+	padding: 10px 15px;
+	border-radius: 10px;
+	border: none;
+	margin: 0;
+}
+
+.warning {
+	display: none;
+}

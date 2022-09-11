@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Password Generator</title>
+		<link rel="stylesheet" href="index.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Karla:wght@400;700;800&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container">
+			<h1 id="headline">Generate a <span class="green-span">random password</span></h1>
+			<h2 class="tagline">Never use an insecure password again.</h2>
+			<div class="pass-config">
+				<div class="pass-length">
+					<p>Password length: </p>
+					<input type="number" value="15" name="pass-length" id="length-input" min="10" max="18">
+				</div>
+				<div class="pass-composition">
+					<p>Password requirements: </p>
+					<div>
+						<input type="checkbox" name="pass-requirements" value="lowercase" id="lowercase-input" checked>
+						<label for="lowercase">Lowecase letters</label>
+					</div>
+					<div>
+						<input type="checkbox" name="pass-requirements" value="uppercase" id="uppercase-input" checked>
+						<label for="uppercase">Uppercase letters</label>
+					</div>
+					<div>
+						<input type="checkbox" name="pass-requirements" value="numbers" id="numbers-input" checked>
+						<label for="numbers">Numbers</label>
+					</div>
+					<div>
+						<input type="checkbox" name="pass-requirements" value="special-characters" id="special-characters-input" checked>
+						<label for="special-characters">Special characters</label>
+					</div>
+				</div>
+			</div>
+			<button id="pass-btn" class="generate-button">Generate passwords</button>
+			<!-- <hr class="horizontal-line"> -->
+			<span class="horizontal-line"></span>
+			<div class="warning">
+				<p id="warning-message">Warning: at least one of the password requirements need to be checked</p>
+			</div>
+			<div class="pass-container">
+				<p id="pass-one" class="password-para"></p>
+				<p id="pass-two" class="password-para"></p>
+			</div>
+			<script src="index.js"></script>
+		</div>
+	</body>
+</html>
